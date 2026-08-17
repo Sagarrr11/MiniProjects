@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  /* Background-color */
+  --bg-primary-color: #0c0c0c;
+  --bg-button-color: #1f1f1f;
+  --bg-fill-color: #fdfdfc;
+  --bg-food-color: red;
+  --bg-task-color: #2f2c2c;
+  --delete-color: #f33d3d;
+  /* Text Colors */
+  --text-primary-color: #f4f4f4;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 40px;
+  --space-3xl: 48px;
+
+  /* Border colors */
+  --border-primary-color: #333333;
+
+  /* border radius */
+  --border-radius-xs: 4px;
+  --border-radius-sm: 8px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 16px;
+  --border-radius-xl: 20px;
+  --border-radius-2xl: 24px;
+  --border-radius-3xl: 30px;
+
+  /* Padding */
+  --nav-padding: 15px 30px;
+  --sec-padding: 15px 30px;
+  --padding-s: 5px;
+  --padding-m: 10px;
+  --padding-l: 15px;
+  --padding-xl: 20px;
+  --padding-xxl: 25px;
+}
+
+html {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+body {
+  background-color: var(--bg-primary-color);
+  color: var(--text-primary-color);
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  padding: var(--nav-padding);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: var(--bg-primary-color);
+}
+
+nav button {
+  background-color: var(--bg-button-color);
+  border: none;
+  outline: none;
+  color: var(--text-primary-color);
+  padding: var(--padding-m) var(--padding-l);
+  cursor: pointer;
+  border-radius: var(--border-radius-md);
+}
+
+section {
+  padding: var(--sec-padding);
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  gap: var(--padding-xxl);
+}
+
+section .task-column {
+  background-color: var(--bg-button-color);
+  flex-grow: 1;
+  width: 100%;
+  padding: var(--padding-m);
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-m);
+  border-radius: var(--border-radius-md);
+  transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+section .task-column .heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section .hover-over {
+  border: 2px dashed var(--text-primary-color);
+  scale: 1.02;
+}
+
+section .task-column .task {
+  background-color: var(--bg-task-color);
+  padding: var(--padding-m);
+  border-radius: var(--border-radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-m);
+  cursor: grab;
+}
+
+section .task-column .task button {
+  align-self: flex-end;
+  cursor: pointer;
+  padding: var(--padding-s) var(--padding-m);
+  border-radius: var(--border-radius-sm);
+  border: none;
+  background-color: var(--delete-color);
+}
+
+.modal {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal .bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(61, 61, 61, 0.404);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+.modal .center {
+  background-color: var(--bg-button-color);
+  padding: var(--padding-xxl);
+  border-radius: var(--border-radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-m);
+  z-index: 10;
+}
+
+.center input,
+.center textarea,
+.center select {
+  background-color: var(--bg-task-color);
+  border: none;
+  outline: none;
+  color: var(--text-primary-color);
+  padding: var(--padding-m);
+  border-radius: var(--border-radius-s);
+}
+
+.center button {
+  background-color: var(--bg-task-color);
+  width: fit-content;
+  align-self: center;
+  border: none;
+  outline: none;
+  color: var(--text-primary-color);
+  padding: var(--padding-m) var(--padding-l);
+  cursor: pointer;
+  border-radius: var(--border-radius-md);
+}
