@@ -119,6 +119,7 @@ function render() {
   snake.forEach((segment) => {
     blocks[`${segment.x}-${segment.y}`].classList.remove("fill");
   });
+
   snake.unshift(head);
   if (!ateFood) {
     snake.pop();
@@ -135,6 +136,7 @@ startBtn.addEventListener("click", () => {
 });
 
 restartButton.addEventListener("click", restartGame);
+
 function restartGame() {
   clearInterval(intervalId);
   clearInterval(timerIntervalId);
