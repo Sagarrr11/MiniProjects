@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&h=500&q=80",
+    "title": "Developer Portfolio",
+    "desc": "A modern developer portfolio built with React, featuring responsive layouts, customizable sections, and clean project presentation.",
+    "tags": ["React", "JavaScript", "Vite", "CSS", "Responsive UI", "Portfolio"],
+    "repoLink": "https://github.com/mayankagarwal09/dev-portfolio",
+    "demoLink": "https://mayankagarwal.me"
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=800&h=500&q=80",
+    "title": "Weather App",
+    "desc": "A real-time weather application built with React that fetches weather information from an external API.",
+    "tags": ["React", "JavaScript", "API", "Axios", "CSS", "Async JS"],
+    "repoLink": "https://github.com/19smabtahinoor/Weather-App-React",
+    "demoLink": "https://weather-app-react-i9feovzlk-smabtahinoor.vercel.app/"
+  },
+  {
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=800&h=500&q=80",
+    "title": "Todo App",
+    "desc": "A task management application with add, edit, delete, and persistent local storage functionality for managing tasks.",
+    "tags": ["React", "JavaScript", "LocalStorage", "CRUD", "CSS", "State"],
+    "repoLink": "https://github.com/19smabtahinoor/Todo-App-React-Localstroage",
+    "demoLink": "https://todo-for-you.vercel.app/"
+  },
+  {
+    "id": 4,
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&h=500&q=80",
+    "title": "E-Commerce Store",
+    "desc": "A responsive React e-commerce storefront with product filtering, detailed product pages, cart functionality, and API integration.",
+    "tags": ["React", "Tailwind", "API", "React Router", "Filtering", "Cart"],
+    "repoLink": "https://github.com/idrisibrahimerten/react-tailwind-ecommerce-website-project",
+    "demoLink": "https://idrisibrahimerten.github.io/react-tailwind-ecommerce-website-project/"
+  },
+  {
+    "id": 5,
+    "image": "https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?auto=format&fit=crop&w=800&h=500&q=80",
+    "title": "Markdown Editor",
+    "desc": "A browser-based Markdown editor built with React that allows users to write and preview formatted Markdown content.",
+    "tags": ["React", "JavaScript", "Markdown", "CSS", "Components", "UI"],
+    "repoLink": "https://github.com/19smabtahinoor/Markdown-Editor-React",
+    "demoLink": "https://markdown-editor-react.vercel.app/"
+  }
+]
